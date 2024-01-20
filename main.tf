@@ -1,8 +1,4 @@
-module "vpc" {
-  source  = "app.terraform.io/ryanf/vpc/aws"
-  version = "1.0.5"
 
-}
 resource "aws_db_instance" "rds" {
   allocated_storage    = var.allocated_storage
   db_name              = var.db_name
